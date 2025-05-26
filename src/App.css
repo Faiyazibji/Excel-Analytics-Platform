@@ -1,0 +1,121 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.nav {
+  background-color: skyblue;
+  padding: 10px 20px;
+}
+
+.nav-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-ul li {
+  margin: 5px 15px;
+}
+
+.nav-ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+  transition: background 0.3s;
+}
+
+.nav-ul li a:hover {
+  background-color: #6bb8e8;
+  border-radius: 5px;
+}
+
+#logout {
+  background-color: red;
+  border-radius: 5px;
+  padding: 6px 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  max-width: 100%;
+}
+
+/* Forms */
+.register, .login {
+  margin: 60px auto;
+  width: 90%;
+  max-width: 400px;
+}
+
+.inputbox {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid skyblue;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.appbtn {
+  width: 100%;
+  padding: 12px;
+  background-color: navy;
+  border: none;
+  border-radius: 10px;
+  color: wheat;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.appbtn:hover {
+  background-color: darkblue;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: skyblue;
+  padding: 15px 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav-ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-ul li {
+    margin: 8px 0;
+  }
+
+  .App-logo {
+    height: 30vmin;
+  }
+}
+
+@media (max-width: 480px) {
+  .appbtn {
+    font-size: 14px;
+  }
+
+  .nav-ul li a {
+    padding: 6px 10px;
+  }
+}
