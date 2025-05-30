@@ -6,7 +6,9 @@ import Footer from './Footer'; // Footer component
 import SignUp from './componet/Signup'; // Signup component
 import PrivateComponent from './componet/PrivateComponent'; // Auth guard
 import Login from './componet/Login'; // Login component
-import FileUpload from './componet/FileUpload';
+import ExcelChartUploader from './Pages/Uploadfile/Uploadefile';
+import FileUpload from './Pages/Home/FileUpload';
+import Home from './Pages/Home/Home';
 
 function App() {
   const [count, setCount] = useState(0); // Not currently used — can be removed
@@ -20,9 +22,9 @@ function App() {
         <Routes>
           {/* Protected Routes — only visible if logged in */}
           <Route element={<PrivateComponent />}>
-            <Route path='/' element={<h1>Home</h1>} />
+            <Route path='/' element={<Home/>} />
             <Route path='/add' element={<FileUpload/>} />
-            <Route path='/update' element={<h1>Update file</h1>} />
+            <Route path='/update' element={<ExcelChartUploader/>} />
             <Route path='/profile' element={<h1>Profile</h1>} />
           </Route>
 
