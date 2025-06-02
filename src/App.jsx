@@ -9,6 +9,7 @@ import Login from './componet/Login'; // Login component
 import ExcelChartUploader from './Pages/Uploadfile/Uploadefile';
 import FileUpload from './Pages/Home/FileUpload';
 import Home from './Pages/Home/Home';
+import ExcelFile from './componet/XMl/ExcelFile';
 
 function App() {
   const [count, setCount] = useState(0); // Not currently used — can be removed
@@ -25,7 +26,7 @@ function App() {
             <Route path='/' element={<Home/>} />
             <Route path='/add' element={<FileUpload/>} />
             <Route path='/update' element={<ExcelChartUploader/>} />
-            <Route path='/profile' element={<h1>Profile</h1>} />
+            <Route path='/profile' element={<ExcelFile/>} />
           </Route>
 
           {/* Public Routes */}
